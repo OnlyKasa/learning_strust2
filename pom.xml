@@ -5,7 +5,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.nvq.learning_strust2</groupId>
-    <artifactId>learning-strust2</artifactId>
+    <artifactId>learning-strut2</artifactId>
     <version>1</version>
     <packaging>war</packaging>
 
@@ -32,7 +32,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </dependencies>
 
     <build>
-        <finalName>struts2</finalName>
+        <finalName>learning-strut2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
