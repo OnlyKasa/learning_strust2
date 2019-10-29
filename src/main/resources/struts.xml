@@ -18,12 +18,4 @@
             <result>/default.jsp</result>
         </action>
     </package>
-
-    <package name="tutorial" extends="struts-default">
-        <action name="tutorial" class="actions.tutorial.Login">
-            <result name="success">/tutorial/login/success.jsp</result>
-            <result name="error">/tutorial/login/error.jsp</result>
-        </action>
-    </package>
-
 </struts>
