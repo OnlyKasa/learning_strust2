@@ -1,16 +1,21 @@
 package actions.tutorial;
 
+import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.ResultPath;
 
-@Action(value = "tutorial",
-        results = {
-        @Result(name = "success", location = "/tutorial/login/success.jsp"),
-        @Result(name = "error", location = "/tutorial/login/error.jsp")
-})
-public class Login {
+@ResultPath(value = "/")
+@Result(name = "success", location = "tutorial/login/success.jsp")
+public class Login extends ActionSupport {
 
+    @Action(value = "/get/data")
     public String execute() {
-        return "error";
+        return SUCCESS;
+    }
+
+    @Action(value = "/tutorial")
+    public String input() {
+        return INPUT;
     }
 }
