@@ -1,11 +1,11 @@
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:32772/postgres</property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.username">docker</property>
+        <property name="hibernate.connection.password">docker</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <mapping class="actions.tutorial.entity.UserDemo"/>
     </session-factory>
